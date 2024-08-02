@@ -7,4 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_executable(FastPimplExample src/main.cpp)
+add_executable(FastPimplTest src/main.cpp)
+
+target_include_directories(FastPimplTest PRIVATE ${PROJECT_SOURCE_DIR}/include)
